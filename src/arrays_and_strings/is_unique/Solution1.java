@@ -11,7 +11,7 @@ import java.util.HashSet;
 class Solution1 {
     // With an additional data structure
 
-    protected static boolean isUnique(String s) {
+    static boolean isUnique(String s) {
         if (s == null || s.isEmpty()) return false;
 
         HashSet<Character> uniqueChars = new HashSet<>();
