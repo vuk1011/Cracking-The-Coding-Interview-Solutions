@@ -8,7 +8,7 @@
 
 package arrays_and_strings.palindrome_permutation;
 
-public class Solution1 {
+class Solution1 {
     /*
     Assumptions made:
     the string is made of english letters only
