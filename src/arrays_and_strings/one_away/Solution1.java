@@ -12,7 +12,7 @@
 
 package arrays_and_strings.one_away;
 
-public class Solution1 {
+class Solution1 {
     static boolean oneAway(String s1, String s2) {
         if (s1 == null || s2 == null) throw new IllegalArgumentException("Strings can't be null.");
         if (s1.equals(s2)) return true;
