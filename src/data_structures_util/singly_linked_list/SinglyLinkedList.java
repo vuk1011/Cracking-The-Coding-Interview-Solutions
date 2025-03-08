@@ -1,7 +1,7 @@
 package data_structures_util.singly_linked_list;
 
 public class SinglyLinkedList<T> {
-    private Node<T> head;
+    public Node<T> head;
 
     public SinglyLinkedList() {
         head = null;
@@ -33,5 +33,22 @@ public class SinglyLinkedList<T> {
             tmp = tmp.next;
         }
         System.out.println("null");
+    }
+
+    public void deleteNode(T data) {
+        if (head == null) return;
+        if (head.data.equals(data)) {
+            head = head.next;
+            return;
+        }
+
+        Node<T> tmp = head;
+        while (tmp.next != null) {
+            if (tmp.next.data.equals(data)) {
+                tmp.next = tmp.next.next;
+                return;
+            }
+            tmp = tmp.next;
+        }
     }
 }
